@@ -1,0 +1,46 @@
+{
+    "pages": [
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/arIR/AR01.jpeg", "name": "Abomasnow TG01/TG30" },
+                { "image": null, "name": "Flapple TG02/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR03.jpeg", "name": "Kingdra TG03/TG30" },
+                { "image": null, "name": "Frosmoth TG04/TG30" },
+                { "image": null, "name": "Gardevoir TG05/TG30" },
+                { "image": null, "name": "Wyrdeer TG06/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR07.jpeg", "name": "Falinks TG07/TG30" },
+                { "image": null, "name": "Kleavor TG08/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR09.jpeg", "name": "Mightyena TG09/TG30" }
+            ],
+            "rightPage": [
+                { "image": null, "name": "Galarian Obstagoon TG10/TG30" },
+                { "image": null, "name": "Bronzong TG11/TG30" },
+                { "image": null, "name": "Hoothoot TG12/TG30" },
+                { "image": null, "name": "Starmie V TG13/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR14.jpeg", "name": "Ice Rider Calyrex V TG14/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR15.jpeg", "name": "Ice Rider Calyrex VMAX TG15/TG30" },
+                { "image": null, "name": "Galarian Articuno V TG16/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR17.jpeg", "name": "Shadow Rider Calyrex V TG17/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR18.jpeg", "name": "Shadow Rider Calyrex VMAX TG18/TG30" }
+            ]
+        },
+        {
+            "leftPage": [
+                { "image": null, "name": "Galarian Zapdos V TG19/TG30" },
+                { "image": null, "name": "Galarian Moltres V TG20/TG30" },
+                { "image": null, "name": "Zacian V TG21/TG30" },
+                { "image": null, "name": "Zamazenta V TG22/TG30" },
+                { "image": null, "name": "Garchomp V TG23/TG30" },
+                { "image": null, "name": "Allister TG24/TG30" },
+                { "image": null, "name": "Bea TG25/TG30" },
+                { "image": null, "name": "Melony TG26/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR27.jpeg", "name": "Milo TG27/TG30" }
+            ],
+            "rightPage": [
+                { "image": null, "name": "Piers TG28/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR29.jpeg", "name": "Ice Rider Calyrex VMAX TG29/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR30.jpeg", "name": "Shadow Rider Calyrex VMAX TG30/TG30" }
+            ]
+        }
+    ]
+}
