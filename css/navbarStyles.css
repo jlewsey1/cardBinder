@@ -1,0 +1,32 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;  /* Dark background color */
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar items */
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover effect for navbar items */
+  .nav-item:hover {
+    background-color: #4CAF50; /* Light green when hovered */
+    color: white;
+  }
+  
+  /* Active state for navbar items */
+  .nav-item.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
