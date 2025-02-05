@@ -1,41 +1,20 @@
-/* General page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     text-align: center;
-  }
-  
-  header {
+    background-color: #f4f4f4;
+}
+
+header {
     background: #333;
     color: white;
     padding: 20px;
     font-size: 24px;
 }
-  
-  nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .nav-item {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-  }
-  
-  .nav-item:hover {
-    text-decoration: underline;
-  }
-  
-  .content {
-    padding: 20px;
-  }
-  
-  /* Binder container that holds both the left and right pages */
-  .binder-container {
+
+/* Binder container that holds both the left and right pages */
+.binder-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -86,5 +65,14 @@ body {
     .image-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 columns per row on smaller screens */
     }
-  }
   
+    /* Hide the right page on small screens */
+    .binder-page.right {
+      display: none;
+    }
+  
+    /* Optionally, hide the left page if needed, you can toggle this */
+    /* .binder-page.left {
+      display: none;
+    } */
+  }
