@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading binder data:", error));
 
-    // Add event listeners for navigation buttons
-    document.getElementById("prev-page").addEventListener("click", prevPage);
-    document.getElementById("next-page").addEventListener("click", nextPage);
-
     // Listen for window resize to check if we are on mobile
     window.addEventListener('resize', () => {
         isMobile = window.innerWidth <= 768;
         renderPage(currentPageIndex); // Re-render the current page when resizing
     });
+
+    // Add event listeners for tapping on left and right parts of the screen
+    document.getElementById("left-side").addEventListener("click", prevPage);
+    document.getElementById("right-side").addEventListener("click", nextPage);
 });
 
 function renderPage(pageIndex) {
@@ -49,21 +49,21 @@ function renderPage(pageIndex) {
         populateBinder(rightGrid, binderData[pageIndex].rightPage);
     }
 
-    // Disable buttons when at the first or last page
-    if (isMobile){
+    // Disable interaction when at the first or last page (depending on mobile or desktop)
+    if (isMobile) {
         if (isShowingRightPage && pageIndex == binderData.length - 1){
-            document.getElementById("next-page").disabled = true;
+            document.getElementById("right-side").style.pointerEvents = 'none';
         } else {
-            document.getElementById("next-page").disabled = false;
+            document.getElementById("right-side").style.pointerEvents = 'auto';
         }
         if (!isShowingRightPage && pageIndex == 0){
-            document.getElementById("prev-page").disabled = true;
+            document.getElementById("left-side").style.pointerEvents = 'none';
         } else {
-            document.getElementById("prev-page").disabled = false;
+            document.getElementById("left-side").style.pointerEvents = 'auto';
         }
     } else {
-        document.getElementById("prev-page").disabled = pageIndex === 0;
-        document.getElementById("next-page").disabled = pageIndex === binderData.length - 1;
+        document.getElementById("left-side").style.pointerEvents = pageIndex === 0 ? 'none' : 'auto';
+        document.getElementById("right-side").style.pointerEvents = pageIndex === binderData.length - 1 ? 'none' : 'auto';
     }
 }
 

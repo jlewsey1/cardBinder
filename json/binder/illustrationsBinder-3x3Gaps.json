@@ -5,9 +5,9 @@
                 { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Flareon TG01/TG30" },
                 { "image": "../../images/cards/IR/bsIR/BS02.jpeg", "name": "Vaporeon TG02/TG30" },
                 { "image": "../../images/cards/IR/bsIR/BS03.jpeg", "name": "Octillery TG03/TG30" },
-                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Jolteon TG04/TG30" },
-                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Zekrom TG05/TG30" },
-                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Dusknoir TG06/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS04.jpeg", "name": "Jolteon TG04/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS05.jpeg", "name": "Zekrom TG05/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS06.jpeg", "name": "Dusknoir TG06/TG30" },
                 { "image": "../../images/cards/IR/bsIR/BS07.jpeg", "name": "Dedenne TG07/TG30" },
                 { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Alcremie TG08/TG30" },
                 { "image": "../../images/cards/IR/bsIR/BS09.jpeg", "name": "Ariados TG09/TG30" }
@@ -161,9 +161,9 @@
                 { "image": null, "name": "Sordward and Shielbert TG28/TG30" },
                 { "image": "../../images/cards/IR/stIR/ST29.jpeg", "name": "Rayquaza VMAX TG29/TG30" },
                 { "image": "../../images/cards/IR/stIR/ST30.jpeg", "name": "Duraludon VMAX TG30/TG30" },
-                { "image": "static/images/cards/czIR/CZ001.jpeg", "name": "Galarian Moltres SWSH284" },
-                { "image": "static/images/cards/czIR/CZ002.jpeg", "name": "Galarian Zapdos SWSH283" },
-                { "image": "static/images/cards/czIR/CZ003.jpeg", "name": "Galarian Articuno SWSH282" },
+                { "image": "../../images/cards/IR/czIR/CZ001.jpeg", "name": "Galarian Moltres SWSH284" },
+                { "image": "../../images/cards/IR/czIR/CZ002.jpeg", "name": "Galarian Zapdos SWSH283" },
+                { "image": "../../images/cards/IR/czIR/CZ003.jpeg", "name": "Galarian Articuno SWSH282" },
                 { "image": null, "name": "Hisuian Voltorb GG01/GG70" },
                 { "image": null, "name": "Kricketune GG02/GG70" },
                 { "image": null, "name": "Magmortar GG03/GG70" }
@@ -173,11 +173,11 @@
             "leftPage": [
                 { "image": null, "name": "Oricorio GG04/GG70" },
                 { "image": null, "name": "Lapras GG05/GG70" },
-                { "image": "static/images/cards/czIR/CZ06.jpeg", "name": "Manaphy GG06/GG70" },
-                { "image": "static/images/cards/czIR/CZ07.jpeg", "name": "Keldeo GG07/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ06.jpeg", "name": "Manaphy GG06/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ07.jpeg", "name": "Keldeo GG07/GG70" },
                 { "image": null, "name": "Electivire GG08/GG70" },
                 { "image": null, "name": "Toxtricity GG09/GG70" },
-                { "image": "static/images/cards/czIR/CZ10.jpeg", "name": "Magnezone GG10/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ10.jpeg", "name": "Magnezone GG10/GG70" },
                 { "image": null, "name": "Lunatone GG11/GG70" },
                 { "image": null, "name": "Deoxys GG12/GG70" }
             ],
@@ -185,9 +185,9 @@
                 { "image": null, "name": "Diancie GG13/GG70" },
                 { "image": null, "name": "Comfey GG14/GG70" },
                 { "image": null, "name": "Solrock GG15/GG70" },
-                { "image": "static/images/cards/czIR/CZ16.jpeg", "name": "Absol GG16/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ16.jpeg", "name": "Absol GG16/GG70" },
                 { "image": null, "name": "Thievul GG17/GG70" },
-                { "image": "static/images/cards/czIR/CZ18.jpeg", "name": "Mew GG18/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ18.jpeg", "name": "Mew GG18/GG70" },
                 { "image": null, "name": "Altaria GG19/GG70" },
                 { "image": null, "name": "Latias GG20/GG70" },
                 { "image": null, "name": "Hisuian Goodra GG21/GG70" }
@@ -203,15 +203,15 @@
                 { "image": null, "name": "Swablu GG27/GG70" },
                 { "image": null, "name": "Duskull GG28/GG70" },
                 { "image": null, "name": "Bidoof GG29/GG70" },
-                { "image": "static/images/cards/czIR/CZ30.jpeg", "name": "Pikachu GG30/GG70" }
+                { "image": "../../images/cards/IR/czIR/CZ30.jpeg", "name": "Pikachu GG30/GG70" }
             ],
             "rightPage": [
                 { "image": null, "name": "Turtwig GG31/GG70" },
                 { "image": null, "name": "Paras GG32/GG70" },
                 { "image": null, "name": "Poochyena GG33/GG70" },
                 { "image": null, "name": "Mareep GG34/GG70" },
-                { "image": "static/images/cards/czIR/CZ004.jpeg", "name": "Lucario VMAX SWSH291" },
-                { "image": "static/images/cards/czIR/CZ35.jpeg", "name": "Leafeon VSTAR GG35/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ004.jpeg", "name": "Lucario VMAX SWSH291" },
+                { "image": "../../images/cards/IR/czIR/CZ35.jpeg", "name": "Leafeon VSTAR GG35/GG70" },
                 { "image": null, "name": "Entei V GG36/GG70" },
                 { "image": null, "name": "Simisear VSTAR GG37/GG70" },
                 { "image": null, "name": "Suicune V GG38/GG70" }
@@ -222,8 +222,8 @@
                 { "image": null, "name": "Lumineon V GG39/GG70" },
                 { "image": null, "name": "Glaceon VSTAR GG40/GG70" },
                 { "image": null, "name": "Raikou V GG41/GG70" },
-                { "image": "static/images/cards/czIR/CZ42.jpeg", "name": "Zeraora VMAX GG42/GG70" },
-                { "image": "static/images/cards/czIR/CZ43.jpeg", "name": "Zeraora VSTAR GG43/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ42.jpeg", "name": "Zeraora VMAX GG42/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ43.jpeg", "name": "Zeraora VSTAR GG43/GG70" },
                 { "image": null, "name": "Mewtwo VSTAR GG44/GG70" },
                 { "image": null, "name": "Deoxys VMAX GG45/GG70" },
                 { "image": null, "name": "Deoxys VSTAR GG46/GG70" },
@@ -232,13 +232,13 @@
             "rightPage": [
                 { "image": null, "name": "Zacian V GG48/GG70" },
                 { "image": null, "name": "Drapion V GG49/GG70" },
-                { "image": "static/images/cards/czIR/CZ50.jpeg", "name": "Darkrai VSTAR GG50/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ50.jpeg", "name": "Darkrai VSTAR GG50/GG70" },
                 { "image": null, "name": "Hisuian Samurott V GG51/GG70" },
                 { "image": null, "name": "Hisuian Samurott VSTAR GG52/GG70" },
                 { "image": null, "name": "Hoopa V GG53/GG70" },
                 { "image": null, "name": "Zamazenta V GG54/GG70" },
-                { "image": "static/images/cards/czIR/CZ55.jpeg", "name": "Regigigas VMAX GG55/GG70" },
-                { "image": "static/images/cards/czIR/CZ56.jpeg", "name": "Hisuian Zoroark VSTAR GG56/GG70" }
+                { "image": "../../images/cards/IR/czIR/CZ55.jpeg", "name": "Regigigas VMAX GG55/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ56.jpeg", "name": "Hisuian Zoroark VSTAR GG56/GG70" }
             ]
         },
         {

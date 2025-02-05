@@ -19,6 +19,9 @@
 
     <div class="content">
         <div class="binder-container">
+            <!-- Invisible left and right areas for tap navigation -->
+            <div id="left-side" style="position: absolute; left: 0; width: 50%; height: 80%; z-index: 10;"></div>
+            <div id="right-side" style="position: absolute; right: 0; width: 50%; height: 80%; z-index: 10;"></div>
             <!-- Left page of the binder -->
             <div class="binder-page left">
                 <div class="image-grid" id="left-grid"></div>
@@ -29,13 +32,6 @@
                 <div class="image-grid" id="right-grid"></div>
             </div>
         </div>
-    
-        <!-- Navigation Buttons -->
-        <div class="navigation-buttons">
-            <button id="prev-page">Previous</button>
-            <button id="next-page">Next</button>
-        </div>
-
     </div>
     
 
