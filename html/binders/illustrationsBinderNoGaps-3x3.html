@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3 Binder</title>
+  <link rel="stylesheet" href="../../css/navbarStyles.css">
+  <link rel="stylesheet" href="../../css/binder/binderStyles3x3.css">
+</head>
+<body>
+    <header>
+        Jacob's Collection
+    </header>
+    <nav class="navbar">
+        <a href="../../index.html" class="nav-item">Home</a>
+        <a href="../binder.html" class="nav-item">Binder</a>
+        <a href="../../html/boxes.html" class="nav-item">Boxes</a>
+    </nav>
+
+    <div class="content">
+        <div class="binder-container">
+            <!-- Invisible left and right areas for tap navigation -->
+            <div id="left-side" style="position: absolute; left: 0; width: 50%; height: 80%; z-index: 10;"></div>
+            <div id="right-side" style="position: absolute; right: 0; width: 50%; height: 80%; z-index: 10;"></div>
+            <!-- Left page of the binder -->
+            <div class="binder-page left">
+                <div class="image-grid" id="left-grid"></div>
+            </div>
+    
+            <!-- Right page of the binder -->
+            <div class="binder-page right">
+                <div class="image-grid" id="right-grid"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../../js/binder/binder3x3NoGapsFunctions.js"></script>
+</body>
+</html>

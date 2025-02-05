@@ -1,0 +1,102 @@
+{
+    "pages": [
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Flareon TG01/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS02.jpeg", "name": "Vaporeon TG02/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS03.jpeg", "name": "Octillery TG03/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS04.jpeg", "name": "Jolteon TG04/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS05.jpeg", "name": "Zekrom TG05/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS06.jpeg", "name": "Dusknoir TG06/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS07.jpeg", "name": "Dedenne TG07/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS08.jpeg", "name": "Alcremie TG08/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS09.jpeg", "name": "Ariados TG09/TG30" }
+            ],
+            "rightPage": [
+                { "image": "../../images/cards/IR/bsIR/BS10.jpeg", "name": "Houndoom TG10/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS11.jpeg", "name": "Eevee TG11/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS12.jpeg", "name": "Oranguru TG12/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS18.jpeg", "name": "Single Strike Urshifu V TG18/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS19.jpeg", "name": "Single Strike Urshifu VMAX TG19/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS20.jpeg", "name": "Rapid Strike Urshifu V TG20/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS21.jpeg", "name": "Rapid Strike Urshifu VMAX TG21/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR01.jpeg", "name": "Abomasnow TG01/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR03.jpeg", "name": "Kingdra TG03/TG30" }
+            ]
+        },
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/arIR/AR07.jpeg", "name": "Falinks TG07/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR09.jpeg", "name": "Mightyena TG09/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR14.jpeg", "name": "Ice Rider Calyrex V TG14/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR15.jpeg", "name": "Ice Rider Calyrex VMAX TG15/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR17.jpeg", "name": "Shadow Rider Calyrex V TG17/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR18.jpeg", "name": "Shadow Rider Calyrex VMAX TG18/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO01.jpeg", "name": "Parasect TG01/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO02.jpeg", "name": "Roserade TG02/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO03.jpeg", "name": "Charizard TG03/TG30" }
+            ],
+            "rightPage": [
+                { "image": "../../images/cards/IR/loIR/LO05.jpeg", "name": "Pikachu TG05/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO06.jpeg", "name": "Gengar TG06/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO07.jpeg", "name": "Banette TG07/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO08.jpeg", "name": "Hisuian Arcanine TG08/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO13.jpeg", "name": "Orbeetle VMAX TG13/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO29.jpeg", "name": "Pikachu VMAX TG29/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO30.jpeg", "name": "Mew VMAX TG30/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST02.jpeg", "name": "Milotic TG02/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST03.jpeg", "name": "Flaaffy TG03/TG30" }
+            ]
+        },
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/stIR/ST05.jpeg", "name": "Gardevoir TG05/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST06.jpeg", "name": "Malamar TG06/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST10.jpeg", "name": "Smeargle TG10/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST11.jpeg", "name": "Altaria TG11/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST20.jpeg", "name": "Rayquaza VMAX TG20" },
+                { "image": "../../images/cards/IR/stIR/ST21.jpeg", "name": "Duraludon VMAX TG21/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST23.jpeg", "name": "Friends in Galar TG23/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST29.jpeg", "name": "Rayquaza VMAX TG29/TG30" },
+                { "image": "../../images/cards/IR/stIR/ST30.jpeg", "name": "Duraludon VMAX TG30/TG30" }
+            ],
+            "rightPage": [
+                { "image": "../../images/cards/IR/czIR/CZ001.jpeg", "name": "Galarian Moltres SWSH284" },
+                { "image": "../../images/cards/IR/czIR/CZ002.jpeg", "name": "Galarian Zapdos SWSH283" },
+                { "image": "../../images/cards/IR/czIR/CZ003.jpeg", "name": "Galarian Articuno SWSH282" },
+                { "image": "../../images/cards/IR/czIR/CZ16.jpeg", "name": "Absol GG16/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ18.jpeg", "name": "Mew GG18/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ30.jpeg", "name": "Pikachu GG30/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ35.jpeg", "name": "Leafeon VSTAR GG35/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ42.jpeg", "name": "Zeraora VMAX GG42/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ43.jpeg", "name": "Zeraora VSTAR GG43/GG70" }
+            ]
+        },
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/czIR/CZ50.jpeg", "name": "Darkrai VSTAR GG50/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ55.jpeg", "name": "Regigigas VMAX GG55/GG70" },
+                { "image": "../../images/cards/IR/czIR/CZ56.jpeg", "name": "Hisuian Zoroark VSTAR GG56/GG70" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" }
+            ],
+            "rightPage": [
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" },
+                { "image": null, "name": "" }
+            ]
+        }
+    ]
+}
