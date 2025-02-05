@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binder Page</title>
-  <link rel="stylesheet" href="../css/indexStyles.css">
   <link rel="stylesheet" href="../css/navbarStyles.css">
   <link rel="stylesheet" href="../css/binder/binderStyles.css">
 </head>
@@ -20,13 +19,22 @@
 
     <div class="content">
         <h1>Your Binders</h1>
-        <div id="binder-grid" class="binder-grid">
-        <!-- Grid of binder tiles will be displayed here -->
+    
+        <!-- Binder Cards Container -->
+        <div class="binder-cards">
+          <!-- 3x3 Binder Card -->
+          <a href="binders/illustrationsBinder-3x3.html" class="binder-card binder-3x3">
+            <h2>3x3 Illustrations Binder</h2>
+          </a>
+    
+          <!-- 2x2 Binder Card -->
+          <a href="binders/binder-2x2.html" class="binder-card binder-2x2">
+            <h2>2x2 Binder</h2>
+          </a>
         </div>
-
-        <button id="new-binder-btn" class="new-binder-btn">Create New Binder</button>
+      </div>
     </div>
 
-    <script src="../js/binder/binderFunctions.js"></script>
+  <script src="../js/binder/binderFunctions.js"></script>
 </body>
 </html>

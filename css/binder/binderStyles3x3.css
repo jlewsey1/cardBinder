@@ -1,0 +1,90 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  /* Binder container that holds both the left and right pages */
+  .binder-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Common styling for both left and right binder pages */
+  .binder-page {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+  }
+  
+  /* Styling for the image grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 15px;
+    padding: 10px 0;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-item img:hover {
+    transform: scale(1.05); /* Image hover effect */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .binder-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .binder-page {
+      width: 90%; /* Full width for smaller screens */
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns per row on smaller screens */
+    }
+  }
+  
