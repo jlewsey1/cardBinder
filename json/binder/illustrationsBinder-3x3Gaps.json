@@ -2,44 +2,123 @@
     "pages": [
         {
             "leftPage": [
+                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Flareon TG01/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS02.jpeg", "name": "Vaporeon TG02/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS03.jpeg", "name": "Octillery TG03/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Jolteon TG04/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Zekrom TG05/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Dusknoir TG06/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS07.jpeg", "name": "Dedenne TG07/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS01.jpeg", "name": "Alcremie TG08/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS09.jpeg", "name": "Ariados TG09/TG30" }
+            ],
+            "rightPage": [
+                { "image": "../../images/cards/IR/bsIR/BS10.jpeg", "name": "Houndoom TG10/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS11.jpeg", "name": "Eevee TG11/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS12.jpeg", "name": "Oranguru TG12/TG30" },
+                { "image": null, "name": "Boltund V TG13/TG30" },
+                { "image": null, "name": "Sylveon V TG14/TG30" },
+                { "image": null, "name": "Sylveon VMAX TG15/TG30" },
+                { "image": null, "name": "Mimikyu V TG16/TG30" },
+                { "image": null, "name": "Mimikyu VMAX TG17/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS18.jpeg", "name": "Single Strike Urshifu V TG18/TG30" }
+            ]
+        },        
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/bsIR/BS19.jpeg", "name": "Single Strike Urshifu VMAX TG19/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS20.jpeg", "name": "Rapid Strike Urshifu V TG20/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS21.jpeg", "name": "Rapid Strike Urshifu VMAX TG21/TG30" },
+                { "image": null, "name": "Umbreon V TG22/TG30" },
+                { "image": null, "name": "Umbreon VMAX TG23/TG30" },
+                { "image": null, "name": "Acerola's Premonition TG24/TG30" },
+                { "image": null, "name": "Cafe Master TG25/TG30" },
+                { "image": null, "name": "Gloria TG26/TG30" },
+                { "image": null, "name": "Rapid Strike Style Mustard TG27/TG30" }
+            ],
+            "rightPage": [
+                { "image": null, "name": "Single Strike Style Mustard TG28/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS29.jpeg", "name": "Single Strike Urshifu VMAX TG29/TG30" },
+                { "image": "../../images/cards/IR/bsIR/BS30.jpeg", "name": "Rapid Strike Urshifu VMAX TG30/TG30" },
                 { "image": "../../images/cards/IR/arIR/AR01.jpeg", "name": "Abomasnow TG01/TG30" },
                 { "image": null, "name": "Flapple TG02/TG30" },
                 { "image": "../../images/cards/IR/arIR/AR03.jpeg", "name": "Kingdra TG03/TG30" },
                 { "image": null, "name": "Frosmoth TG04/TG30" },
                 { "image": null, "name": "Gardevoir TG05/TG30" },
-                { "image": null, "name": "Wyrdeer TG06/TG30" },
+                { "image": null, "name": "Wyrdeer TG06/TG30" }
+            ]
+        },  
+        {
+            "leftPage": [
                 { "image": "../../images/cards/IR/arIR/AR07.jpeg", "name": "Falinks TG07/TG30" },
                 { "image": null, "name": "Kleavor TG08/TG30" },
-                { "image": "../../images/cards/IR/arIR/AR09.jpeg", "name": "Mightyena TG09/TG30" }
-            ],
-            "rightPage": [
+                { "image": "../../images/cards/IR/arIR/AR09.jpeg", "name": "Mightyena TG09/TG30" },
                 { "image": null, "name": "Galarian Obstagoon TG10/TG30" },
                 { "image": null, "name": "Bronzong TG11/TG30" },
                 { "image": null, "name": "Hoothoot TG12/TG30" },
                 { "image": null, "name": "Starmie V TG13/TG30" },
                 { "image": "../../images/cards/IR/arIR/AR14.jpeg", "name": "Ice Rider Calyrex V TG14/TG30" },
-                { "image": "../../images/cards/IR/arIR/AR15.jpeg", "name": "Ice Rider Calyrex VMAX TG15/TG30" },
+                { "image": "../../images/cards/IR/arIR/AR15.jpeg", "name": "Ice Rider Calyrex VMAX TG15/TG30" }
+            ],
+            "rightPage": [
                 { "image": null, "name": "Galarian Articuno V TG16/TG30" },
                 { "image": "../../images/cards/IR/arIR/AR17.jpeg", "name": "Shadow Rider Calyrex V TG17/TG30" },
-                { "image": "../../images/cards/IR/arIR/AR18.jpeg", "name": "Shadow Rider Calyrex VMAX TG18/TG30" }
-            ]
-        },
-        {
-            "leftPage": [
+                { "image": "../../images/cards/IR/arIR/AR18.jpeg", "name": "Shadow Rider Calyrex VMAX TG18/TG30" },
                 { "image": null, "name": "Galarian Zapdos V TG19/TG30" },
                 { "image": null, "name": "Galarian Moltres V TG20/TG30" },
                 { "image": null, "name": "Zacian V TG21/TG30" },
                 { "image": null, "name": "Zamazenta V TG22/TG30" },
                 { "image": null, "name": "Garchomp V TG23/TG30" },
-                { "image": null, "name": "Allister TG24/TG30" },
+                { "image": null, "name": "Allister TG24/TG30" }
+            ]
+        },
+        {
+            "leftPage": [
+
                 { "image": null, "name": "Bea TG25/TG30" },
                 { "image": null, "name": "Melony TG26/TG30" },
-                { "image": "../../images/cards/IR/arIR/AR27.jpeg", "name": "Milo TG27/TG30" }
-            ],
-            "rightPage": [
+                { "image": "../../images/cards/IR/arIR/AR27.jpeg", "name": "Milo TG27/TG30" },
                 { "image": null, "name": "Piers TG28/TG30" },
                 { "image": "../../images/cards/IR/arIR/AR29.jpeg", "name": "Ice Rider Calyrex VMAX TG29/TG30" },
-                { "image": "../../images/cards/IR/arIR/AR30.jpeg", "name": "Shadow Rider Calyrex VMAX TG30/TG30" }
+                { "image": "../../images/cards/IR/arIR/AR30.jpeg", "name": "Shadow Rider Calyrex VMAX TG30/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO01.jpeg", "name": "Parasect TG01/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO02.jpeg", "name": "Roserade TG02/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO03.jpeg", "name": "Charizard TG03/TG30" }
+            ],
+            "rightPage": [
+                { "image": null, "name": "Chandelure TG04/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO05.jpeg", "name": "Pikachu TG05/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO06.jpeg", "name": "Gengar TG06/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO07.jpeg", "name": "Banette TG07/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO08.jpeg", "name": "Hisuian Arcanine TG08/TG30" },
+                { "image": null, "name": "Spiritomb TG09/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO10.jpeg", "name": "Snorlax TG09/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO11.jpeg", "name": "Castform TG10/TG30" },
+                { "image": null, "name": "Orbeetle V TG12/TG30" }
+            ]
+        },
+        {
+            "leftPage": [
+                { "image": "../../images/cards/IR/loIR/LO13.jpeg", "name": "Orbeetle VMAX TG13/TG30" },
+                { "image": null, "name": "Centiskorch V TG14/TG30" },
+                { "image": null, "name": "Centiskorch VMAX TG15/TG30" },
+                { "image": null, "name": "Pikachu V TG16/TG30" },
+                { "image": null, "name": "Pikachu VMAX TG17/TG30" },
+                { "image": null, "name": "Enamorus V TG18/TG30" },
+                { "image": null, "name": "Gallade V TG19/TG30" },
+                { "image": null, "name": "Crobat V TG20/TG30" },
+                { "image": null, "name": "Eternatus V TG21/TG30" }
+            ],
+            "rightPage": [
+                { "image": null, "name": "Eternatus VMAX TG22/TG30" },
+                { "image": null, "name": "Adventurer's Discovery TG23/TG30" },
+                { "image": null, "name": "Boss's Orders TG24/TG30" },
+                { "image": null, "name": "Cook TG25/TG30" },
+                { "image": null, "name": "Kabu TG26/TG30" },
+                { "image": null, "name": "Nessa TG27/TG30" },
+                { "image": null, "name": "Opal TG28/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO29.jpeg", "name": "Pikachu VMAX TG29/TG30" },
+                { "image": "../../images/cards/IR/loIR/LO30.jpeg", "name": "Mew VMAX TG30/TG30" }
             ]
         }
     ]
