@@ -89,23 +89,49 @@ header {
 }
 
 
-/* Responsive design for smaller screens */
+
+/* Mobile Layout (for screens smaller than 768px) */
 @media (max-width: 768px) {
     .binder-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .binder-page {
-      width: 90%;
-    }
-  
-    .image-grid {
-      grid-template-columns: repeat(3, 1fr);
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px; /* Increased gap between pages */
+        margin-top: 10px; /* Reduced top margin */
     }
 
-    /* Hide right page on small screens */
+    .binder-page {
+        width: 100%; /* Full width for each page */
+        margin-bottom: 20px; /* Add space between the pages */
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    /* Show left page on mobile */
+    .binder-page.left {
+        display: block;
+    }
+    /* Hide right page on mobile */
     .binder-page.right {
-      display: none;
+        display: none;
+    }
+
+    /* Adjust image grid to fit mobile screens */
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns on mobile */
+        gap: 2px; /* Adjust grid gap for mobile */
+    }
+
+    .image-item {
+        width: 100%;
+        height: 165px;
+        background-color: #ddd; /* Light gray for empty slots */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        border: 2px solid #bbb;
     }
 }
+
