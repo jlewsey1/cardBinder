@@ -18,65 +18,23 @@ header {
     width: 100%; /* or any width you prefer */
 }
 
-
-/* Cube Container: Allows positioning anywhere */
-.cube-container {
-    position: absolute; /* Change to relative if needed */
-    top: 300px; /* Adjust for vertical position */
-    left: 300px; /* Adjust for horizontal position */
-    width: 200px; /* Same width as the cube */
-    height: 200px; /* Same height as the cube */
+/* Grid Layout for 3 rows of 5 prisms */
+.prism-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  /* Evenly spaced items */
+    gap: 20px;  /* Adds spacing between prisms */
+    padding: 20px;
+    padding-left: 15%;
 }
-
-/* 3D Cube Styles */
-.cubeRotate {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: rotate 5s infinite linear;
-}
-
-.cubeRotate div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid #000;
-}
-
-/* Cube Faces */
-.fr  { transform: translateZ(100px); }
-.ba  { transform: rotateY(180deg) translateZ(100px); }
-.le  { transform: rotateY(-90deg) translateZ(100px); }
-.ri  { transform: rotateY(90deg) translateZ(100px); }
-.to  { transform: rotateX(90deg) translateZ(100px); }
-.bo  { transform: rotateX(-90deg) translateZ(100px); }
-
-/* Rotation Animation */
-@keyframes rotate {
-    from {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    to {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
-}
-
 
 .prism-container {
-    position: absolute; /* Or use relative */
-    top: 300px;  /* Move it down from the top */
-    left: 850px;  /* Move it to the right */
     width: 200px;
     height: 400px;
+    position: relative;  /* Positioning relative to parent */
 }
 
-
-.scene {
-    perspective: 800px;
-}
-
+/* Other 3D Prism styles as you've written earlier... */
 .prism {
     position: relative;
     width: 10px;
@@ -93,7 +51,7 @@ header {
     border: 1px solid #000;
 }
 
-/* Positioning the faces of the prism */
+/* Prism Face Styles and Other Details */
 .front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.6);}
 .back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.6);}
 .left   { 
@@ -121,5 +79,28 @@ header {
     }
     to {
         transform: rotateY(360deg);
+    }
+}
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* For mobile, set 3 prisms per row */
+    .prism-grid {
+        justify-content: space-between;  /* Adjust spacing between items */
+        padding-left: 20%;
+        width: 100%;
+    }
+
+    /* Adjust width for mobile (3 per row) */
+    .prism-container {
+        width: 200px; /* 3 items per row, adjust percentage */
+    }
+}
+
+/* Optional: For very small screens (like phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    .prism-container {
+        width: 45%; /* Adjust to 2 items per row for very small screens */
     }
 }
