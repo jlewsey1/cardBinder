@@ -18,15 +18,17 @@ header {
     width: 100%; /* or any width you prefer */
 }
 
+
 /* Grid Layout for 3 rows of 5 prisms */
 .prism-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;  /* Evenly spaced items */
     gap: 20px;  /* Adds spacing between prisms */
-    padding: 20px;
-    padding-left: 15%;
-    transform: translateZ(-550px); 
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 120px;
+    transform: translateZ(200px); 
 }
 
 .prism-container {
@@ -117,30 +119,32 @@ header {
     position: absolute;
     background: rgba(0, 123, 255, 0.1);  /* Semi-transparent color for the faces */
     border: 1px solid rgba(0, 0, 0, 1); /* Optional border for visibility */
-    opacity: 0.7; /* Adjust the opacity to control the translucency */
+    background-image: url("../../images/glassPane.jpeg");
+    opacity: 0.6; /* Adjust the opacity to control the translucency */
 }
 
 /* Prism Face Styles and Other Details */
 .display-front  { 
-    top: 26px;
-    transform: translateZ(-220px); 
+    top: 105px;
+    right: 267px;
+    transform: translateZ(220px); 
     height: 350px; 
     width: 1250px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    opacity: 0.8; /* Adjust the opacity for a more glass-like effect */
+    opacity: 0.2;
 }
 
 .display-back   { 
-    top: 26px;
-    transform: rotateY(180deg) translateZ(-231px); 
+    top: -90px;
+    left: 118px; 
+    transform: rotateY(180deg) translateZ(431px); 
     height: 350px; 
     width: 1250px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    opacity: 0.8; /* Adjust the opacity for a more glass-like effect */
 }
 
 .display-left   { 
-    top: 24px;
+    top: 26px;
     left: 10px; 
     transform: rotateY(-90deg) translateZ(235px); /* Adjust translation for proper positioning */
     height: 350px; 
@@ -150,7 +154,7 @@ header {
 .display-right  { 
     top: 24px;
     right: 10px; 
-    transform: rotateY(90deg) translateZ(1479px); /* Adjust translation for proper positioning */
+    transform: rotateY(90deg) translateZ(49px); /* Adjust translation for proper positioning */
     height: 350px; 
     width: 450px; 
 }
@@ -162,6 +166,7 @@ header {
 }
 
 .display-bottom { 
+    top: 2px;
     transform: rotateX(-90deg) translateZ(150px); /* Adjust Z translation for proper positioning */
     height: 450px; 
     width: 1250px; 

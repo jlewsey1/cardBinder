@@ -18,7 +18,6 @@ header {
     width: 100%; /* or any width you prefer */
 }
 
-
 .display-prism {
     position: absolute;
     width: 10px;
@@ -32,8 +31,9 @@ header {
 .display-face {
     position: absolute;
     background: rgba(0, 123, 255, 0.1);  /* Semi-transparent color for the faces */
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border for visibility */
-    opacity: 0.7; /* Adjust the opacity to control the translucency */
+    border: 1px solid rgba(0, 0, 0, 1); /* Optional border for visibility */
+    background-image: url("../../images/glassPane.jpeg");
+    opacity: 0.6; /* Adjust the opacity to control the translucency */
 }
 
 /* Prism Face Styles and Other Details */
@@ -42,9 +42,10 @@ header {
     transform: translateZ(-220px); 
     height: 350px; 
     width: 1250px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    opacity: 0.8; /* Adjust the opacity for a more glass-like effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.3; /* Adjust the opacity for a more glass-like effect */
 }
+
 
 .display-back   { 
     top: 26px;
@@ -52,7 +53,6 @@ header {
     height: 350px; 
     width: 1250px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    opacity: 0.8; /* Adjust the opacity for a more glass-like effect */
 }
 
 .display-left   { 
