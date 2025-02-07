@@ -52,23 +52,19 @@ header {
 }
 
 /* Prism Face Styles and Other Details */
-.front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.6);}
-.back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.6);}
+.front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+.back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
 .left   { 
-    transform: rotateY(-90deg) translateZ(65px) scaleX(-1); 
+    transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
     width: 140px; 
-    background-image: url(../../images/cards/IR/bsIR/BS01.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../../images/cards/cardback.jpeg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .right  { 
-    transform: rotateY(90deg) translateZ(-70px); 
+    transform: rotateY(90deg) translateZ(-70px) scaleX(-1); 
     width: 140px; 
-    background-image: url(../../images/cards/IR/bsIR/BS01.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .top    { transform: rotateX(90deg) translateZ(70px); height: 140px; width: 5px; }
 .bottom { transform: rotateX(-90deg) translateZ(130px); height: 140px; width: 5px; }
@@ -103,4 +99,69 @@ header {
     .prism-container {
         width: 45%; /* Adjust to 2 items per row for very small screens */
     }
+}
+
+
+.display-prism {
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    transform-style: preserve-3d;
+    left: 100px;
+    top: 150px; /* Adjust vertical positioning */
+    transform: rotateY(10deg) rotateX(10deg);  /* Adjust the angles to set the prism at an angle */
+}
+
+.display-face {
+    position: absolute;
+    background: rgba(0, 123, 255, 0.1);  /* Semi-transparent color for the faces */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Optional border for visibility */
+    opacity: 0.7; /* Adjust the opacity to control the translucency */
+}
+
+/* Prism Face Styles and Other Details */
+.display-front  { 
+    top: 26px;
+    transform: translateZ(-220px); 
+    height: 350px; 
+    width: 1250px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    opacity: 0.8; /* Adjust the opacity for a more glass-like effect */
+}
+
+.display-back   { 
+    top: 26px;
+    transform: rotateY(180deg) translateZ(-231px); 
+    height: 350px; 
+    width: 1250px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    opacity: 0.8; /* Adjust the opacity for a more glass-like effect */
+}
+
+.display-left   { 
+    top: 24px;
+    left: 10px; 
+    transform: rotateY(-90deg) translateZ(235px); /* Adjust translation for proper positioning */
+    height: 350px; 
+    width: 450px; 
+}
+
+.display-right  { 
+    top: 24px;
+    right: 10px; 
+    transform: rotateY(90deg) translateZ(1479px); /* Adjust translation for proper positioning */
+    height: 350px; 
+    width: 450px; 
+}
+
+.display-top    { 
+    transform: rotateX(90deg) translateZ(200px); /* Adjust the Z translation for positioning */
+    height: 450px; 
+    width: 1250px; 
+}
+
+.display-bottom { 
+    transform: rotateX(-90deg) translateZ(150px); /* Adjust Z translation for proper positioning */
+    height: 450px; 
+    width: 1250px; 
 }
