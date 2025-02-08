@@ -179,7 +179,7 @@ header {
 
 
     .display-prism-container {
-        height: 347px;
+        height: 276px;
         position: relative;  /* Positioning relative to parent */
         flex-grow: 1;
         width: 100%;
@@ -190,7 +190,7 @@ header {
         height: 200px;
         transform-style: preserve-3d;
         left: 0px;
-        top: 40px; /* Adjust vertical positioning */
+        top: 20px; /* Adjust vertical positioning */
         width: 100%;
         transform: rotateY(10deg) rotateX(10deg);  /* Adjust the angles to set the prism at an angle */
     }
