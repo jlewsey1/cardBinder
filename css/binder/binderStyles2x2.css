@@ -15,6 +15,7 @@ header {
 }
 
 .spacer { height: 40px; width: 100%; }
+.spacer2 { height: 10px; width: 100%; }
 
 .horizontal-spacer { display: inline-block; width: 10px; height: 300px; flex-shrink: 0;}
 
@@ -130,9 +131,10 @@ header {
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
-    .body{
+    #prism-wrapper {
         overflow-x: hidden;
     }
+
     /* For mobile, set 3 prisms per row */
     .prism-grid {
         width: 330px;

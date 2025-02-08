@@ -92,6 +92,9 @@ window.addEventListener('DOMContentLoaded', function () {
         }
 
         displayPrismContainer.appendChild(displayPrism);
+        const spacer2 = document.createElement("div");
+        spacer2.classList.add("spacer2");
+        prismWrapper.appendChild(spacer2);
         prismWrapper.appendChild(displayPrismContainer);
     }
 });
