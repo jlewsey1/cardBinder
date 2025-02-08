@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', function () {
-  const prismFront = document.querySelectorAll('.left');
   const prismBack = document.querySelectorAll('.right');
   const images = [
       '../../images/cards/IR/bsIR/BS01.jpeg',
@@ -18,14 +17,6 @@ window.addEventListener('DOMContentLoaded', function () {
       '../../images/cards/IR/bsIR/BS19.jpeg',
       '../../images/cards/IR/bsIR/BS20.jpeg',
   ];
-  /*prismFront.forEach((container, index) => {
-      if (images[index]) {
-          container.style.backgroundImage = `url(${images[index]})`;
-          container.style.backgroundSize = 'cover';
-          container.style.backgroundPosition = 'center';
-          container.style.backgroundRepeat = 'no-repeat';
-      }
-  });*/
   prismBack.forEach((container, index) => {
     if (images[index]) {
         container.style.backgroundImage = `url(${images[index]})`;
@@ -34,4 +25,16 @@ window.addEventListener('DOMContentLoaded', function () {
         container.style.backgroundRepeat = 'no-repeat';
     }
   });
+  const displayPrisms = document.querySelectorAll('.display-prism');
+  let frontRight = 267;
+  let rightRight = 10;
+  for (let i = 1; i < displayPrisms.length; i++){
+      frontRight -= 10;
+      rightRight -= 10;
+      displayFront = displayPrisms[i].querySelector('.display-front');
+      displayRight = displayPrisms[i].querySelector('.display-right');
+      displayFront.style.right = frontRight + "px";
+      displayRight.style.right = rightRight + "px";
+  }
+
 });
