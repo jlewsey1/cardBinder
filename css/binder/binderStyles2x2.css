@@ -43,6 +43,9 @@ header {
     width: 10px;
     height: 200px;
     transform-style: preserve-3d;
+    transform: rotateY(110deg); /* Set the initial rotation */
+}
+.prism:hover {
     animation: rotatePrism 5s infinite linear;
 }
 
@@ -71,10 +74,10 @@ header {
 
 @keyframes rotatePrism {
     from {
-        transform: rotateY(0deg);
+        transform: rotateY(110deg);
     }
     to {
-        transform: rotateY(360deg);
+        transform: rotateY(470deg);
     }
 }
 
@@ -116,6 +119,7 @@ header {
     border: 1px solid rgba(0, 0, 0, 1); /* Optional border for visibility */
     background-image: url("../../images/glassPane.jpeg");
     opacity: 0.6; /* Adjust the opacity to control the translucency */
+    pointer-events: none;
 }
 
 /* Prism Face Styles and Other Details */
@@ -158,6 +162,9 @@ html, body {
         width: 10px;
         height: 200px;
         transform-style: preserve-3d;
+        transform: rotateY(110deg); /* Set the initial rotation */
+    }
+    .prism:hover {
         animation: rotatePrism 5s infinite linear;
     }
     
