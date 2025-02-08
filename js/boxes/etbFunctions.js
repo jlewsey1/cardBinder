@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
         container.style.backgroundRepeat = 'no-repeat';
     }
   });
-  const displayPrisms = document.querySelectorAll('.display-prism');
+  /*const displayPrisms = document.querySelectorAll('.display-prism');
   let frontRight = 267;
   let rightRight = 10;
   for (let i = 1; i < displayPrisms.length; i++){
@@ -35,6 +35,6 @@ window.addEventListener('DOMContentLoaded', function () {
       displayRight = displayPrisms[i].querySelector('.display-right');
       displayFront.style.right = frontRight + "px";
       displayRight.style.right = rightRight + "px";
-  }
+  }*/
 
 });
