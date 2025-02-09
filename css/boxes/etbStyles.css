@@ -54,25 +54,16 @@ header {
 .face {
     position: absolute;
     width: 100px;
-    height: 200px;
+    height: 210px;
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid #000;
 }
 
 /* Prism Face Styles and Other Details */
-.front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
-.back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
-.left   { 
-    transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
-    width: 140px; 
-    background-image: url('../../images/cards/cardback.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 140px; }
-.top    { transform: rotateX(90deg) translateZ(70px); height: 140px; width: 5px; }
-.bottom { transform: rotateX(-90deg) translateZ(130px); height: 140px; width: 5px; }
+.front  { left: -45px; transform: translateZ(150px); width: 95px; background: black;}
+.back   { left: -45px; transform: rotateY(180deg) translateZ(150px); width: 95px; background: black;}
+.left   { transform: rotateY(-90deg) translateZ(195px) scaleX(-1); width: 300px; }
+.right  { transform: rotateY(90deg) translateZ(-100px) scaleX(-1); width: 300px; }
 
 @keyframes rotatePrism {
     from {
@@ -147,8 +138,6 @@ html, body {
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
-    
-
     /* For mobile, set 3 prisms per row */
     .prism-grid {
         width: 270px;
@@ -181,14 +170,7 @@ html, body {
     /* Prism Face Styles and Other Details */
     .front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
     .back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
-    .left   { 
-        transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
-        width: 140px; 
-        background-image: url('../../images/cards/cardback.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+    .left   { transform: rotateY(-90deg) translateZ(65px) scaleX(-1);  width: 140px; }
     .right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 140px; }
     .top    { transform: rotateX(90deg) translateZ(70px); height: 140px; width: 5px; }
     .bottom { transform: rotateX(-90deg) translateZ(130px); height: 140px; width: 5px; }
@@ -230,17 +212,11 @@ html, body {
         background: rgba(0, 0, 0, 0.2);
         border: 1px solid #000;
     }
-    .front  { right: 12px; transform: translateZ(60px); width: 5px; background: rgba(0, 0, 0, 0.9);}
-    .back   { right: 12px; transform: rotateY(180deg) translateZ(60px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+    .front  { right: 13px; transform: translateZ(115px); width: 89px; background: black;}
+    .back   { right: 13px; transform: rotateY(180deg) translateZ(115px); width: 89px; background: black;}
     .left   { 
-        transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
-        width: 120px; 
-        background-image: url('../../images/cards/cardback.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        transform: rotateY(-90deg) translateZ(162px) scaleX(-1); /* scaleX(-1) to mirror image */ 
+        width: 230px; 
     }
-    .right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 120px; }
-    .top    { transform: rotateX(90deg) translateZ(70px); height: 120px; width: 5px; }
-    .bottom { transform: rotateX(-90deg) translateZ(130px); height: 120px; width: 5px; }
+    .right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 230px; }
 }
