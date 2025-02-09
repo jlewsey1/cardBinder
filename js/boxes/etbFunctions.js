@@ -84,11 +84,17 @@ document.addEventListener("DOMContentLoaded", function () {
       prismWrapper.appendChild(displayPrismContainer);
   }
 
-  const prism = document.querySelector(".prism");
-
   const prisms = document.querySelectorAll(".prism");
 
-  prisms.forEach(prism => {
+  const pages = [
+    "../../html/cards/IR/bsIR/bs01.html", "../../html/cards/IR/bsIR/bs02.html", "../../html/cards/IR/bsIR/bs03.html", 
+    "../../html/cards/IR/bsIR/bs04.html", "../../html/cards/IR/bsIR/bs05.html", "../../html/cards/IR/bsIR/bs06.html", 
+    "../../html/cards/IR/bsIR/bs07.html", "../../html/cards/IR/bsIR/bs08.html", "../../html/cards/IR/bsIR/bs09.html", 
+    "../../html/cards/IR/bsIR/bs10.html", "../../html/cards/IR/bsIR/bs11.html", "../../html/cards/IR/bsIR/bs12.html", 
+    "../../html/cards/IR/bsIR/bs18.html", "../../html/cards/IR/bsIR/bs19.html", "../../html/cards/IR/bsIR/bs20.html"
+  ];
+
+  prisms.forEach((prism, index) => {
     let isPaused = true;
 
     prism.addEventListener("click", function () {
@@ -104,6 +110,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isPaused) {
             prism.style.animationPlayState = "paused"; // Re-pause if previously paused
         }
+    });
+
+    prism.addEventListener("dblclick", function () {
+      window.location.href = pages[index]; // Navigate to the specific page based on index
     });
   });
 });
