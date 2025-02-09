@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>2x2 Binder</title>
+  <link rel="stylesheet" href="../../../css/navbarStyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: grey;
+    }
+
+    html, body {
+        height: 110%; /* Full height */
+        overflow-x: hidden;
+    }
+
+    header {
+        background: #333;
+        color: white;
+        padding: 20px;
+        font-size: 24px;
+        z-index: 1000;
+    }
+
+    .name {
+        font-family: 'Quicksand', sans-serif; /* Fun, rounded font */
+        font-size: 40px; /* Adjust font size to your liking */
+        font-weight: bold; /* Make the text bold */
+        color: black; /* Neon green color */
+        text-align: center; /* Center align the text */
+        letter-spacing: 2px; /* Add space between the letters */
+        text-shadow: 0 0 5px #f96b0c, 0 0 10px #f96b0c, 0 0 15px #f96b0c, 0 0 20px #f96b0c;
+        animation: textGlow 2s infinite ease-in-out;
+    }
+    @keyframes textGlow {
+        0% { text-shadow: 0 0 5px #f96b0c, 0 0 10px #f96b0c, 0 0 15px #f96b0c, 0 0 20px #f96b0c; }
+        50% { text-shadow: 0 0 15px #f96b0c, 0 0 20px #f96b0c, 0 0 25px #f96b0c, 0 0 30px #f96b0c; }
+    }
+
+    .spacer { height: 20px; width: 100%; }
+
+
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically (optional) */
+        text-align: center; /* Center text */
+    }
+
+    .prism-container {
+        height: 500px;
+        width: 500px;
+        position: relative;  /* Positioning relative to parent */
+    }
+
+    .prism {
+        position: absolute;
+        width: 10px;
+        height: 340px;
+        transform-style: preserve-3d;
+        transform-origin: center; /* Ensures it rotates around its own center */
+        animation: rotatePrism 5s infinite linear;
+        animation-play-state: running; /* Ensure animation starts */
+        left: 195px;
+    }
+    .face {
+        position: absolute;
+        width: 100px;
+        height: 350px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid #000;
+    }
+
+    .front  { right: -59px; transform: translateZ(181px); width: 129px; background: black;}
+    .back   { right: -59px; transform: rotateY(180deg) translateZ(181px); width: 129px; background: black;}
+    .left   { 
+        transform: rotateY(-90deg) translateZ(113px) scaleX(-1); 
+        width: 360px; 
+        background-image: url('../../../images/boxes/EvolvingSkiesETB.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .right  { transform: rotateY(90deg) translateZ(-243px) scaleX(-1);
+        width: 360px;
+        background-image: url('../../../images/boxes/EvolvingSkiesETB.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    @keyframes rotatePrism {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+
+    #cylinder-container {
+        width: 400px;
+        height: 500px;
+        position: relative;  /* Positioning relative to parent */
+    }
+    
+    .cylinder {
+        position: relative;
+        width: 400px;
+        height: 150px;
+        border-radius: 50%;
+        transform-style: preserve-3d;
+        transform: rotateX(30deg);
+    }
+
+    .cylinder-top, .cylinder-bottom {
+        position: absolute;
+        border-radius: 50%;
+        background: #f96b0c; /* Gold color */
+    }
+
+    .cylinder-top {
+        top: 335px;
+        left: 80px;
+        transform: translateZ(100px);
+        height: 50px;
+        width: 250px;
+        box-shadow: 
+        0 0 5px #f97f0c, 
+        0 0 10px #f97f0c,
+        0 0 15px #f97f0c,
+        0 0 20px #f97f0c;
+        animation: pulseGlow 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+        0% { box-shadow: 0 0 5px #f97f0c, 0 0 10px #f97f0c, 0 0 15px #f97f0c, 0 0 20px #f97f0c; }
+        50% { box-shadow: 0 0 15px #f97f0c, 0 0 30px #f97f0c, 0 0 45px #f97f0c, 0 0 60px #f97f0c; }
+        100% { box-shadow: 0 0 5px #f97f0c, 0 0 10px #f97f0c, 0 0 15px #f97f0c, 0 0 20px #f97f0c; }
+    }
+
+    .cylinder-bottom {
+        top: 405px;
+        left: 64.5px;
+        transform: translateZ(-151px);
+        height: 50px;
+        width: 281px;
+    }
+
+    .cylinder-middle {
+        position: absolute;
+        top: 293px;
+        width: 782px;
+        height: 175px;
+        right: -196px;
+        background: #f96b0c; /* Gold color */
+        transform: perspective(100px) rotateX(10deg) scaleX(0.8) translateZ(-140px);
+    }
+  </style>
+</head>
+<body>
+    <header>
+        Jacob's Collection
+    </header>
+    <nav class="navbar">
+        <a href="../../../../index.html" class="nav-item">Home</a>
+        <a href="../../../binder.html" class="nav-item">Binder</a>
+        <a href="../../../boxes.html" class="nav-item">Boxes</a>
+    </nav>
+
+    <div class="content-container">
+        <div class="spacer"></div>
+        <div class="name">
+            Evolving Skies Pokemon Center ETB
+        </div>
+        <div class="spacer"></div>
+        
+        <div class="spacer"></div>
+        
+        <div id="cylinder-container">
+            <div class="cylinder-middle"></div>
+            <div class="cylinder-bottom"></div>
+            <div class="cylinder-top"></div>
+            <div id="prism-container">
+                <div class="prism">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <p>
+            Put all the info here.
+        </p>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const prisms = document.querySelectorAll(".prism");
+
+            prisms.forEach(prism => {
+                let isPaused = false;
+
+                prism.addEventListener("click", function () {
+                    isPaused = !isPaused; // Toggle pause state
+                    prism.style.animationPlayState = isPaused ? "paused" : "running";
+                });
+
+                prism.addEventListener("mouseenter", function () {
+                    prism.style.animationPlayState = "running"; // Resume on hover
+                });
+
+                prism.addEventListener("mouseleave", function () {
+                    if (isPaused) {
+                        prism.style.animationPlayState = "paused"; // Re-pause if previously paused
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
