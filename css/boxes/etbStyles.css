@@ -44,12 +44,11 @@ header {
     height: 200px;
     transform-style: preserve-3d;
     transform: rotateY(110deg); /* Set the initial rotation */
+    animation: rotatePrism 5s infinite linear;
+    animation-play-state: paused;
 }
 .prism:hover {
-    animation: rotatePrism 5s infinite linear;
-}
-.prism.paused {
-    animation-play-state: paused;
+    animation-play-state: running;
 }
 
 .face {

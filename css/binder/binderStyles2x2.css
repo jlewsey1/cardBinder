@@ -65,14 +65,13 @@ header {
     transform-style: preserve-3d;
     transform-origin: center; /* Ensures it rotates around its own center */
     animation: rotatePrism 5s infinite linear;
+    animation-play-state: running; /* Ensure animation starts */
 }
 
 .prism:hover {
     animation-play-state: paused;
 }
-.prism.paused {
-    animation-play-state: paused;
-}
+
 
 .face {
     position: absolute;
@@ -148,6 +147,7 @@ header {
     0 0 10px #39FF14,
     0 0 15px #39FF14,
     0 0 20px #39FF14;
+    animation: glowAnimation 2s infinite ease-in-out;
   }
   
   .cylinder-bottom {
@@ -167,3 +167,27 @@ header {
     background: #26a610; /* Gold color */
     transform: perspective(100px) rotateX(10deg) scaleX(0.8);
   }
+
+  @keyframes glowAnimation {
+    0% {
+        box-shadow: 
+            0 0 0px #39FF14, 
+            0 0 0px #39FF14,
+            0 0 0px #39FF14,
+            0 0 0px #39FF14;
+    }
+    50% {
+        box-shadow: 
+            0 0 5px #39FF14, 
+            0 0 10px #39FF14,
+            0 0 15px #39FF14,
+            0 0 20px #39FF14;
+    }
+    100% {
+        box-shadow: 
+            0 0 0px #39FF14, 
+            0 0 0px #39FF14,
+            0 0 0px #39FF14,
+            0 0 0px #39FF14;
+    }
+}

@@ -56,10 +56,25 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const prism = document.querySelector(".prism");
+            const prisms = document.querySelectorAll(".prism");
 
-            prism.addEventListener("touchstart", function () {
-                prism.classList.toggle("paused");
+            prisms.forEach(prism => {
+                let isPaused = false;
+
+                prism.addEventListener("click", function () {
+                    isPaused = !isPaused; // Toggle pause state
+                    prism.style.animationPlayState = isPaused ? "paused" : "running";
+                });
+
+                prism.addEventListener("mouseenter", function () {
+                    prism.style.animationPlayState = "running"; // Resume on hover
+                });
+
+                prism.addEventListener("mouseleave", function () {
+                    if (isPaused) {
+                        prism.style.animationPlayState = "paused"; // Re-pause if previously paused
+                    }
+                });
             });
         });
     </script>

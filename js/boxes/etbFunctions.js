@@ -88,7 +88,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const prism = document.querySelector(".prism");
 
-  prism.addEventListener("touchstart", function () {
-      prism.classList.toggle("paused");
+  const prisms = document.querySelectorAll(".prism");
+
+  prisms.forEach(prism => {
+    let isPaused = true;
+
+    prism.addEventListener("click", function () {
+        isPaused = !isPaused; // Toggle pause state
+        prism.style.animationPlayState = isPaused ? "paused" : "running";
+    });
+
+    prism.addEventListener("mouseenter", function () {
+        prism.style.animationPlayState = "running"; // Resume on hover
+    });
+
+    prism.addEventListener("mouseleave", function () {
+        if (isPaused) {
+            prism.style.animationPlayState = "paused"; // Re-pause if previously paused
+        }
+    });
   });
 });
