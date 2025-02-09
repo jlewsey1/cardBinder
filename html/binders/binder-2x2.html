@@ -52,5 +52,17 @@
             Put all the info here.
         </p>
     </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const prism = document.querySelector(".prism");
+
+            prism.addEventListener("touchstart", function () {
+                prism.classList.toggle("paused");
+            });
+        });
+    </script>
+
 </body>
 </html>

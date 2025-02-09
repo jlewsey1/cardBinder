@@ -8,6 +8,7 @@ body {
 
 html, body {
     height: 110%; /* Full height */
+    overflow-x: hidden;
 }
 
 header {
@@ -67,6 +68,9 @@ header {
 }
 
 .prism:hover {
+    animation-play-state: paused;
+}
+.prism.paused {
     animation-play-state: paused;
 }
 

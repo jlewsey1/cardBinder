@@ -48,6 +48,9 @@ header {
 .prism:hover {
     animation: rotatePrism 5s infinite linear;
 }
+.prism.paused {
+    animation-play-state: paused;
+}
 
 .face {
     position: absolute;

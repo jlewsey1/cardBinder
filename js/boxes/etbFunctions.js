@@ -25,18 +25,6 @@ window.addEventListener('DOMContentLoaded', function () {
         container.style.backgroundRepeat = 'no-repeat';
     }
   });
-  /*const displayPrisms = document.querySelectorAll('.display-prism');
-  let frontRight = 267;
-  let rightRight = 10;
-  for (let i = 1; i < displayPrisms.length; i++){
-      frontRight -= 10;
-      rightRight -= 10;
-      displayFront = displayPrisms[i].querySelector('.display-front');
-      displayRight = displayPrisms[i].querySelector('.display-right');
-      displayFront.style.right = frontRight + "px";
-      displayRight.style.right = rightRight + "px";
-  }*/
-
 });
 
 
@@ -97,4 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
       prismWrapper.appendChild(spacer2);
       prismWrapper.appendChild(displayPrismContainer);
   }
+
+  const prism = document.querySelector(".prism");
+
+  prism.addEventListener("touchstart", function () {
+      prism.classList.toggle("paused");
+  });
 });
