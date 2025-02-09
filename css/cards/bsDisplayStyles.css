@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.spacer { height: 40px; width: 100%; }
+.spacer2 { height: 10px; width: 100%; }
+
+.horizontal-spacer { display: inline-block; width: 10px; height: 300px; flex-shrink: 0;}
+
+/* Grid Layout for 3 rows of 5 prisms */
+.prism-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  /* Evenly spaced items */
+    gap: 20px;  /* Adds spacing between prisms */
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 120px;
+    transform: translateZ(200px); 
+}
+
+.prism-container {
+    width: 200px;
+    height: 400px;
+    position: relative;  /* Positioning relative to parent */
+}
+
+/* Other 3D Prism styles as you've written earlier... */
+.prism {
+    position: relative;
+    width: 10px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(110deg); /* Set the initial rotation */
+    animation: rotatePrism 5s infinite linear;
+    animation-play-state: paused;
+}
+.prism:hover {
+    animation-play-state: running;
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+}
+
+/* Prism Face Styles and Other Details */
+.front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+.back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+.left   { 
+    transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
+    width: 140px; 
+    background-image: url('../../images/cards/cardback.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 140px; }
+.top    { transform: rotateX(90deg) translateZ(70px); height: 140px; width: 5px; }
+.bottom { transform: rotateX(-90deg) translateZ(130px); height: 140px; width: 5px; }
+
+@keyframes rotatePrism {
+    from {
+        transform: rotateY(110deg);
+    }
+    to {
+        transform: rotateY(470deg);
+    }
+}
+
+
+/* grid for display prisms */
+.display-prism-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.horizontal-spacer-container {
+    width: 100%;
+    height: 347px;
+    display: flex;  /* Positioning relative to parent */
+    align-items: center;
+}
+
+.display-prism-container {
+    width: 100%;
+    height: 347px;
+    position: relative;  /* Positioning relative to parent */
+    flex-grow: 1;
+}
+
+.display-prism {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+    left: 100px;
+    top: 40px; /* Adjust vertical positioning */
+    transform: rotateY(10deg) rotateX(10deg);  /* Adjust the angles to set the prism at an angle */
+}
+
+.display-face {
+    position: absolute;
+    background: rgba(0, 123, 255, 0.1);  /* Semi-transparent color for the faces */
+    border: 1px solid rgba(0, 0, 0, 1); /* Optional border for visibility */
+    background-image: url("../../images/glassPane.jpeg");
+    opacity: 0.6; /* Adjust the opacity to control the translucency */
+    pointer-events: none;
+}
+
+/* Prism Face Styles and Other Details */
+.display-front  { top: 105px; right: 267px; transform: translateZ(220px); height: 350px; width: 1250px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); opacity: 0.2;}
+.display-back   { top: -90px; left: 118px; transform: rotateY(180deg) translateZ(431px); height: 350px; width: 1250px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+.display-left   { top: 26px; left: 10px; transform: rotateY(-90deg) translateZ(235px); height: 350px; width: 450px; }
+.display-right  { top: 24px; right: 10px; transform: rotateY(90deg) translateZ(49px); height: 350px; width: 450px; }
+.display-top    { transform: rotateX(90deg) translateZ(200px); height: 450px; width: 1250px; }
+.display-bottom { top: 2px; transform: rotateX(-90deg) translateZ(150px); height: 450px; width: 1250px; }
+
+/** { outline: 1px solid red; } */
+
+html, body {
+    overflow-x: hidden;  /* Hide horizontal overflow */
+    overflow-y: auto;    /* Enable vertical scrolling */
+    width: 100vw;        /* Ensure the body's width doesn't exceed the viewport */
+    height: 100vh;       /* Ensure the body's height takes up the full viewport */
+}
+
+#prism-wrapper {
+    width: 100%;         /* Make sure it fits the viewport */
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    
+
+    /* For mobile, set 3 prisms per row */
+    .prism-grid {
+        width: 270px;
+        padding: 145px 0px 0px 75px;
+        transform: translateZ(200px); 
+    }
+
+    /* Adjust width for mobile */
+    .prism-container { width: 120px; }
+
+    .prism {
+        position: relative;
+        width: 10px;
+        height: 200px;
+        transform-style: preserve-3d;
+        transform: rotateY(110deg); /* Set the initial rotation */
+    }
+    .prism:hover {
+        animation: rotatePrism 5s infinite linear;
+    }
+    
+    .face {
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid #000;
+    }
+    
+    /* Prism Face Styles and Other Details */
+    .front  { transform: translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+    .back   { transform: rotateY(180deg) translateZ(70px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+    .left   { 
+        transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
+        width: 140px; 
+        background-image: url('../../images/cards/cardback.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 140px; }
+    .top    { transform: rotateX(90deg) translateZ(70px); height: 140px; width: 5px; }
+    .bottom { transform: rotateX(-90deg) translateZ(130px); height: 140px; width: 5px; }
+
+
+    .display-prism-container {
+        height: 276px;
+        position: relative;  /* Positioning relative to parent */
+        flex-grow: 1;
+        width: 100%;
+    }
+    
+    .display-prism {
+        position: relative;
+        height: 200px;
+        transform-style: preserve-3d;
+        left: 0px;
+        top: 20px; /* Adjust vertical positioning */
+        width: 100%;
+        transform: rotateY(10deg) rotateX(10deg);  /* Adjust the angles to set the prism at an angle */
+    }
+
+    .display-front  { top: 105px; right: 95px; transform: translateZ(250px); height: 280px; width: 325px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); opacity: 0.2;}
+    .display-back   { top: -6px; left: 81px; transform: rotateY(180deg) translateZ(200px); height: 280px; width: 325px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+    
+    .display-left   { top: 45px; left: 177px; transform: rotateY(-90deg) translateZ(235px); height: 280px; width: 175px; }
+    .display-right  { top: 45px; right: -4px; transform: rotateY(90deg) translateZ(49px); height: 280px; width: 175px; }
+    
+    .display-top    { top: 160px; left: 30px; transform: rotateX(90deg) translateZ(205px); height: 180px; width: 325px; }
+    .display-bottom { top: 86px; left: 30px; transform: rotateX(-90deg) translateZ(150px); height: 180px; width: 325px; }
+
+
+    /* Prism Face Styles and Other Details */
+
+    .face {
+        position: absolute;
+        width: 100px;
+        height: 170px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid #000;
+    }
+    .front  { right: 12px; transform: translateZ(60px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+    .back   { right: 12px; transform: rotateY(180deg) translateZ(60px); width: 5px; background: rgba(0, 0, 0, 0.9);}
+    .left   { 
+        transform: rotateY(-90deg) translateZ(65px) scaleX(-1); /* scaleX(-1) to mirror image */ 
+        width: 120px; 
+        background-image: url('../../images/cards/cardback.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .right  { transform: rotateY(90deg) translateZ(-70px) scaleX(-1); width: 120px; }
+    .top    { transform: rotateX(90deg) translateZ(70px); height: 120px; width: 5px; }
+    .bottom { transform: rotateX(-90deg) translateZ(130px); height: 120px; width: 5px; }
+}
