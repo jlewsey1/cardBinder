@@ -40,16 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
       prismContainer.classList.add("prism-container");
 
       prismContainer.innerHTML = `
-          <div class="scene">
-              <div class="prism">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
-              </div>
-          </div>
+            <div class="prism">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
       `;
       return prismContainer;
   }

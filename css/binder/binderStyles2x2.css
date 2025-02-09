@@ -20,19 +20,22 @@ header {
 }
 
 .name {
-    font-family: 'Chewy', sans-serif; /* Fun, rounded font */
+    font-family: 'Quicksand', sans-serif; /* Fun, rounded font */
     font-size: 40px; /* Adjust font size to your liking */
     font-weight: bold; /* Make the text bold */
-    color: #26a610; /* Neon green color */
+    color: black; /* Neon green color */
     text-align: center; /* Center align the text */
     letter-spacing: 2px; /* Add space between the letters */
+    text-shadow: 0 0 5px #2eb017, 0 0 10px #2eb017, 0 0 15px #2eb017, 0 0 20px #2eb017;
+    animation: textGlow 2s infinite ease-in-out;
+}
+@keyframes textGlow {
+    0% { text-shadow: 0 0 5px #2eb017, 0 0 10px #2eb017, 0 0 15px #2eb017, 0 0 20px #2eb017; }
+    50% { text-shadow: 0 0 15px #2eb017, 0 0 20px #2eb017, 0 0 25px #2eb017, 0 0 30px #2eb017; }
 }
 
+.spacer { height: 20px; width: 100%; }
 
-.spacer { height: 40px; width: 100%; }
-.spacer2 { height: 10px; width: 100%; }
-
-.horizontal-spacer { display: inline-block; width: 10px; height: 300px; flex-shrink: 0;}
 
 .content-container {
     display: flex;
@@ -42,20 +45,9 @@ header {
     text-align: center; /* Center text */
 }
 
-
 .prism-container {
-    width: 200px;
     height: 400px;
     position: relative;  /* Positioning relative to parent */
-}
-
-.scene {
-    width: 200px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 500px; /* Helps with depth */
 }
 
 .prism {
@@ -66,13 +58,8 @@ header {
     transform-origin: center; /* Ensures it rotates around its own center */
     animation: rotatePrism 5s infinite linear;
     animation-play-state: running; /* Ensure animation starts */
+    left: 200px;
 }
-
-.prism:hover {
-    animation-play-state: paused;
-}
-
-
 .face {
     position: absolute;
     width: 100px;
@@ -112,34 +99,31 @@ header {
 }
 
 
-
-
-
-
-
-.cylinder-scene {
-    perspective: 1000px; /* Create a 3D perspective */
-  }
+#cylinder-container {
+    width: 400px;
+    height: 500px;
+    position: relative;  /* Positioning relative to parent */
+}
   
-  .cylinder {
+.cylinder {
     position: relative;
     width: 400px;
     height: 150px;
     border-radius: 50%;
     transform-style: preserve-3d;
     transform: rotateX(30deg);
-  }
-  
-  .cylinder-top, .cylinder-bottom {
+}
+
+.cylinder-top, .cylinder-bottom {
     position: absolute;
     border-radius: 50%;
     background: #26a610; /* Gold color */
-  }
-  
-  .cylinder-top {
-    top: 75px;
-    left: 75px;
-    transform: translateZ(150px);
+}
+
+.cylinder-top {
+    top: 335px;
+    left: 80px;
+    transform: translateZ(100px);
     height: 50px;
     width: 250px;
     box-shadow: 
@@ -147,47 +131,29 @@ header {
     0 0 10px #39FF14,
     0 0 15px #39FF14,
     0 0 20px #39FF14;
-    animation: glowAnimation 2s infinite ease-in-out;
-  }
-  
-  .cylinder-bottom {
-    left: 57px;
-    top: 125px;
-    transform: translateZ(149px);
-    height: 50px;
-    width: 286px;
-  }
-  
-  .cylinder-middle {
-    position: absolute;
-    top: -12px;
-    width: 400px;
-    height: 75px;
-    right: 0;
-    background: #26a610; /* Gold color */
-    transform: perspective(100px) rotateX(10deg) scaleX(0.8);
-  }
+    animation: pulseGlow 2s infinite ease-in-out;
+}
 
-  @keyframes glowAnimation {
-    0% {
-        box-shadow: 
-            0 0 0px #39FF14, 
-            0 0 0px #39FF14,
-            0 0 0px #39FF14,
-            0 0 0px #39FF14;
-    }
-    50% {
-        box-shadow: 
-            0 0 5px #39FF14, 
-            0 0 10px #39FF14,
-            0 0 15px #39FF14,
-            0 0 20px #39FF14;
-    }
-    100% {
-        box-shadow: 
-            0 0 0px #39FF14, 
-            0 0 0px #39FF14,
-            0 0 0px #39FF14,
-            0 0 0px #39FF14;
-    }
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14; }
+    50% { box-shadow: 0 0 15px #39FF14, 0 0 30px #39FF14, 0 0 45px #39FF14, 0 0 60px #39FF14; }
+    100% { box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14; }
+}
+
+.cylinder-bottom {
+    top: 405px;
+    left: 64.5px;
+    transform: translateZ(-151px);
+    height: 50px;
+    width: 281px;
+}
+
+.cylinder-middle {
+    position: absolute;
+    top: 293px;
+    width: 782px;
+    height: 175px;
+    right: -196px;
+    background: #26a610; /* Gold color */
+    transform: perspective(100px) rotateX(10deg) scaleX(0.8) translateZ(-140px);
 }
